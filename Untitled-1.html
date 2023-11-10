@@ -28,7 +28,14 @@ alt="a house" width ="400" height="275"></a><br>
 <script> alert('cool stuff ahead')</script>
 
 <input id="housular">
-<input type="button" value="tell me" onclick="alert(document.getElementById('housular').value)">
+<input type="button" id="myBtn" value="tell me" onclick="alert(document.getElementById('housular').value)">
+
+<script>
+let input = document.getElementById("housular");
+input.addEventListener("keypress", function(event) {
+if (event.key == "Enter") {event.preventDefault();
+document.getElementById("myBtn").click()}})
+</script>
 
 <script>
 console.log('you shouldnt be here');
@@ -50,17 +57,29 @@ function myFunction(a,b){return a*b}</script>
 <p id="necessary"></p>
 <script>
 function house() {
-  let text;
-  let name = prompt("Name please");
-  text = "Hello " + name;
-  document.getElementById("necessary").innerHTML = text;
-  alert(text)}
+let text;
+let name = prompt("Name please");
+text = "Hello " + name;
+document.getElementById("necessary").innerHTML = text;
+alert(text)}
 </script>
 
 <p>I am <del>not</del> being held at gunpoint!</p>
 
 <button type="button" onmouseleave="tinyho()"><input id="second"></button>
 <script> function tinyho(){document.getElementById("ad").innerHTML="AAAhhhh!"}</script>
+
+<rt>used for romanji</rt>
+<button _ngcontent-ng-cli-universal-c409409287="" aria-label="play sound"
+class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-9 h-9 flex 
+items-center justify-center rounded-full transform-gpu transition ease-out duration-500 
+group-hover:scale-110 bg-[rgba(246,246,246,0.7)]"><img _ngcontent-ng-cli-universal-c409409287="" 
+alt="play sound icon" class="w-4 h-4 filter" src="https://images.voicy.network/Content/Icons/play-fill.svg">
+<!----><!----></button>
+<button _ngcontent-ng-cli-universal-c409409287="" aria-label="play sound" class="absolute top-1/2 left-1/2
+ -translate-x-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full transform-gpu transition
+  ease-out duration-500 group-hover:scale-110 bg-[rgba(246,246,246,0.7)]"><img _ngcontent-ng-cli-universal-c409409287=""
+   alt="play sound icon" class="w-4 h-4 filter" src="https://images.voicy.network/Content/Icons/play-fill.svg"><!----><!----></button>
 
 </body>
 </html>
