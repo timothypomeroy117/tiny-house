@@ -70,16 +70,16 @@ alert(text)}
 <script> function tinyho(){document.getElementById("ad").innerHTML="AAAhhhh!"}</script>
 
 <rt>used for romanji</rt>
-<button _ngcontent-ng-cli-universal-c409409287="" aria-label="play sound"
-class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-9 h-9 flex 
-items-center justify-center rounded-full transform-gpu transition ease-out duration-500 
-group-hover:scale-110 bg-[rgba(246,246,246,0.7)]"><img _ngcontent-ng-cli-universal-c409409287="" 
-alt="play sound icon" class="w-4 h-4 filter" src="https://images.voicy.network/Content/Icons/play-fill.svg">
-<!----><!----></button>
-<button _ngcontent-ng-cli-universal-c409409287="" aria-label="play sound" class="absolute top-1/2 left-1/2
- -translate-x-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full transform-gpu transition
-  ease-out duration-500 group-hover:scale-110 bg-[rgba(246,246,246,0.7)]"><img _ngcontent-ng-cli-universal-c409409287=""
-   alt="play sound icon" class="w-4 h-4 filter" src="https://images.voicy.network/Content/Icons/play-fill.svg"><!----><!----></button>
 
+<audio id="sound1" src="sond.mp3" preload="auto"></audio>
+<button onclick="document.getElementById('sound1').play();">Playit</button>
+
+<script>
+const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+const buttons = document.querySelectorAll("button");
+buttons.forEach(button => {
+button.addEventListener("click", () => {
+audio.play()})})
+</script>
 </body>
 </html>
