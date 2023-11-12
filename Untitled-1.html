@@ -7,7 +7,7 @@ href="https://i.pinimg.com/originals/bf/01/8d/bf018d2f9fe7513c075470c54a62178c.j
 </Head>
 <body>
 
-<h1 style="font-size:30px;">Heading 1</h1>
+<h1 id="head" style="font-size:30px;">Heading 1</h1>
 <p title="Definetily only good ideas here" style="color: rgb(0, 0, 0);">Good Tiny House Ideas</p>
 
 <a href="https://www.youtube.com/watch?v=tD-2EZCScnk.com">
@@ -81,5 +81,16 @@ buttons.forEach(button => {
 button.addEventListener("click", () => {
 audio.play()})})
 </script>
+
+<script>
+var myDate = new Date();  
+if ( myDate.getHours() < 12 ) {
+document.getElementById("head").innerHTML = "Good Morning!"}
+else if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) {
+document.getElementById("head").innerHTML = "Good Afternoon!"}
+else if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ) { 
+document.getElementById("head").innerHTML = "Good Evening!"}
+</script>
+
 </body>
 </html>
